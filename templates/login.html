@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BorderShield AI Defense System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+        * { scroll-behavior: smooth; }
+        .gradient-military { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+        .glass { backdrop-filter: blur(20px); background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); }
+        .orbitron { font-family: 'Orbitron', monospace; }
+        .floating { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        .pulse-glow { box-shadow: 0 0 20px rgba(99, 102, 241, 0.5); }
+        .login-glow { box-shadow: 0 0 30px rgba(79, 70, 229, 0.4); }
+    </style>
+</head>
+<body class="gradient-military min-h-screen flex items-center justify-center p-4 text-white">
+    <div class="absolute inset-0">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-slate-900/40 to-indigo-900/70"></div>
+    </div>
+
+    <main class="relative z-10 w-full max-w-md">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <div class="floating mb-6 mx-auto w-24 h-24 bg-gradient-to-r from-indigo-600 to-blue-700 rounded-3xl flex items-center justify-center shadow-2xl pulse-glow login-glow">
+                <i class="fas fa-shield-halved text-3xl"></i>
+            </div>
+            <h1 class="orbitron text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent drop-shadow-2xl">
+                BorderShield AI
+            </h1>
+            <p class="text-xl opacity-90 font-semibold">Command Center Access</p>
+        </div>
+
+        <!-- Security Status Cards -->
+        <div class="grid md:grid-cols-2 gap-4 mb-10">
+            <div class="glass p-4 rounded-2xl text-center text-sm">
+                <i class="fas fa-eye text-blue-400 text-xl mb-2 block"></i>
+                <div><span class="font-bold text-blue-400">Live</span> Perimeter Scan</div>
+            </div>
+            <div class="glass p-4 rounded-2xl text-center text-sm">
+                <i class="fas fa-bell text-yellow-400 text-xl mb-2 block"></i>
+                <div><span class="font-bold text-blue-400">Threat</span> Alerts</div>
+            </div>
+            <div class="glass p-4 rounded-2xl text-center text-sm">
+                <i class="fas fa-video text-green-400 text-xl mb-2 block"></i>
+                <div><span class="font-bold text-blue-400">RTSP</span> Surveillance</div>
+            </div>
+            <div class="glass p-4 rounded-2xl text-center text-sm">
+                <i class="fas fa-lock text-purple-400 text-xl mb-2 block"></i>
+                <div><span class="font-bold text-blue-400">Classified</span> Access</div>
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="glass p-10 rounded-3xl shadow-2xl border border-white/20 login-glow">
+            <h2 class="text-3xl font-bold text-center mb-8 orbitron bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                Officer Authentication
+            </h2>
+            
+            <form method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-semibold mb-3 text-gray-200 flex items-center">
+                        <i class="fas fa-user-tie mr-2 text-blue-400"></i>
+                        Officer Identification
+                    </label>
+                    <input type="text" name="username" placeholder="Enter officer ID" required
+                           class="w-full px-5 py-4 bg-white/10 border border-white/30 rounded-2xl text-white placeholder-gray-300 focus:outline-none focus:ring-4 focus:ring-indigo-500/50 focus:border-indigo-400 transition-all duration-300 text-lg">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold mb-3 text-gray-200 flex items-center">
+                        <i class="fas fa-key mr-2 text-blue-400"></i>
+                        Access Token
+                    </label>
+                    <input type="password" name="password" placeholder="Enter secure token" required
+                           class="w-full px-5 py-4 bg-white/10 border border-white/30 rounded-2xl text-white placeholder-gray-300 focus:outline-none focus:ring-4 focus:ring-indigo-500/50 focus:border-indigo-400 transition-all duration-300 text-lg">
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-blue-700 hover:from-indigo-700 hover:to-blue-800 text-white py-4 px-8 rounded-2xl text-xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 transform login-glow">
+                    <i class="fas fa-satellite-dish mr-2"></i>
+                    Enter Command Center
+                </button>
+            </form>
+
+            <!-- Security Assurance -->
+            <div class="mt-8 p-4 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-400/50 rounded-2xl text-xs text-indigo-100 text-center">
+                <i class="fas fa-shield-check mr-1"></i>
+                AES-256 + Zero Trust Architecture. Biometric backup authentication available.
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="mt-8 text-center space-y-4">
+            <a href="/" class="glass inline-flex items-center px-6 py-3 rounded-2xl hover:bg-white/20 transition-all duration-300 text-lg">
+                <i class="fas fa-arrow-left mr-2"></i>BorderShield Overview
+            </a>
+            <p class="text-sm opacity-75">
+                New to system? <a href="/signup" class="font-semibold text-blue-400 hover:text-blue-300 transition-colors">Register Officer Access</a>
+            </p>
+        </div>
+
+        <!-- Live Status Badge -->
+        <div class="absolute top-6 right-6 glass p-4 rounded-2xl shadow-2xl text-xs flex items-center">
+            <div class="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"></div>
+            <span>Border Surveillance Active</span>
+        </div>
+    </main>
+
+    <script>
+        // Enhanced form interactions
+        const inputs = document.querySelectorAll('input');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'scale(1.02)';
+                this.parentElement.parentElement.classList.add('login-glow');
+            });
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'scale(1)';
+                this.parentElement.parentElement.classList.remove('login-glow');
+            });
+        });
+
+        // Auto-focus officer ID on load
+        document.querySelector('input[name="username"]').focus();
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && document.activeElement.tagName !== 'BUTTON') {
+                document.querySelector('button[type="submit"]').click();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - BorderShield AI Defense System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+        * { scroll-behavior: smooth; }
+        .gradient-military { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
+        .glass { backdrop-filter: blur(20px); background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); }
+        .orbitron { font-family: 'Orbitron', monospace; }
+        .floating { animation: float 6s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        .pulse-glow { box-shadow: 0 0 20px rgba(99, 102, 241, 0.5); }
+    </style>
+</head>
+<body class="gradient-military min-h-screen flex items-center justify-center p-4 text-white">
+    <div class="absolute inset-0">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-slate-900/40 to-indigo-900/70"></div>
+    </div>
+
+    <main class="relative z-10 w-full max-w-md">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <div class="floating mb-6 mx-auto w-24 h-24 bg-gradient-to-r from-indigo-600 to-blue-700 rounded-3xl flex items-center justify-center shadow-2xl pulse-glow">
+                <i class="fas fa-shield-halved text-3xl"></i>
+            </div>
+            <h1 class="orbitron text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500 bg-clip-text text-transparent drop-shadow-2xl">
+                BorderShield AI
+            </h1>
+            <p class="text-xl opacity-90 font-semibold">Join Military Defense Network</p>
+        </div>
+
+        <!-- Security Info Cards -->
+        <div class="grid md:grid-cols-2 gap-4 mb-10">
+            <div class="glass p-4 rounded-2xl text-center text-sm">
+                <i class="fas fa-gun text-red-400 text-xl mb-2 block"></i>
+                <div><span class="font-bold text-blue-400">Armed Intruder</span> Detection</div>
+            </div>
+            <div class="glass p-4 rounded-2xl text-center text-sm">
+                <i class="fas fa-drone text-yellow-400 text-xl mb-2 block"></i>
+                <div><span class="font-bold text-blue-400">UAV/Drone</span> Detection</div>
+            </div>
+            <div class="glass p-4 rounded-2xl text-center text-sm">
+                <i class="fas fa-fingerprint text-green-400 text-xl mb-2 block"></i>
+                <div><span class="font-bold text-blue-400">Personnel</span> Recognition</div>
+            </div>
+            <div class="glass p-4 rounded-2xl text-center text-sm">
+                <i class="fas fa-satellite-dish text-purple-400 text-xl mb-2 block"></i>
+                <div><span class="font-bold text-blue-400">C4ISR</span> Integration</div>
+            </div>
+        </div>
+
+        <!-- Signup Form -->
+        <div class="glass p-10 rounded-3xl shadow-2xl border border-white/20">
+            <h2 class="text-3xl font-bold text-center mb-8 orbitron bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
+                Secure Access Registration
+            </h2>
+            
+            <form method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-semibold mb-3 text-gray-200 flex items-center">
+                        <i class="fas fa-user-tie mr-2 text-blue-400"></i>
+                        Command Officer ID
+                    </label>
+                    <input type="text" name="username" placeholder="Enter officer identifier" required
+                           class="w-full px-5 py-4 bg-white/10 border border-white/30 rounded-2xl text-white placeholder-gray-300 focus:outline-none focus:ring-4 focus:ring-indigo-500/50 focus:border-indigo-400 transition-all duration-300 text-lg">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold mb-3 text-gray-200 flex items-center">
+                        <i class="fas fa-lock mr-2 text-blue-400"></i>
+                        Secure Access Code
+                    </label>
+                    <input type="password" name="password" placeholder="Military-grade encryption" required
+                           class="w-full px-5 py-4 bg-white/10 border border-white/30 rounded-2xl text-white placeholder-gray-300 focus:outline-none focus:ring-4 focus:ring-indigo-500/50 focus:border-indigo-400 transition-all duration-300 text-lg">
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-indigo-600 to-blue-700 hover:from-indigo-700 hover:to-blue-800 text-white py-4 px-8 rounded-2xl text-xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 transform">
+                    <i class="fas fa-shield-virus mr-2"></i>
+                    Deploy Command Access
+                </button>
+            </form>
+
+            <!-- Security Notice -->
+            <div class="mt-8 p-4 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-400/50 rounded-2xl text-xs text-indigo-100 text-center">
+                <i class="fas fa-shield-check mr-1"></i>
+                AES-256 military-grade encryption. DoD-compliant security protocols. Zero-knowledge architecture.
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="mt-8 text-center space-y-4">
+            <a href="/" class="glass inline-flex items-center px-6 py-3 rounded-2xl hover:bg-white/20 transition-all duration-300 text-lg">
+                <i class="fas fa-arrow-left mr-2"></i>Back to BorderShield
+            </a>
+            <p class="text-sm opacity-75">
+                Authorized personnel? <a href="/login" class="font-semibold text-blue-400 hover:text-blue-300 transition-colors">Access Command Center</a>
+            </p>
+        </div>
+
+        <!-- Floating Security Badge -->
+        <div class="absolute top-6 right-6 glass p-4 rounded-2xl shadow-2xl text-xs">
+            <div class="flex items-center">
+                <div class="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"></div>
+                <span>Classified Network Active</span>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Form enhancements
+        const inputs = document.querySelectorAll('input');
+        inputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'scale(1.02)';
+            });
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'scale(1)';
+            });
+        });
+
+        // Password strength indicator (visual only)
+        const passwordInput = document.querySelector('input[type="password"]');
+        passwordInput.addEventListener('input', function() {
+            const strength = this.value.length > 12 ? 'strong' : this.value.length > 6 ? 'medium' : 'weak';
+            const label = this.parentElement.querySelector('label');
+            label.innerHTML = label.innerHTML.replace('Secure Access Code', 
+                strength === 'strong' ? '<span class="text-green-400">Strong Access ✓</span>' : 
+                strength === 'medium' ? '<span class="text-yellow-400">Medium Security</span>' : 
+                '<span class="text-red-400">Weak Access</span>');
+        });
+    </script>
+</body>
+</html>
