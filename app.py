@@ -33,8 +33,8 @@ with app.app_context():
     db.create_all()
 
 # ---------------- EMAIL CONFIG ----------------
-SENDER_EMAIL = "techproembedded@gmail.com"
-SENDER_PASS  = "wtufahsfxbqbltxh"
+SENDER_EMAIL = "your_email@gmail.com"
+SENDER_PASS  = "your_password_here"
 RECEIVER_EMAIL = "abninfotechprojects@gmail.com"
 
 def send_email(subject, body):
