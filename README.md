@@ -2,7 +2,8 @@
 
 AI-based defence surveillance system with real-time face recognition, 
 weapon detection, and fire detection using Flask, YOLO, and OpenCV. 
-Sends automatic email alerts and triggers alarm on threat detection.
+Sends automatic email alerts and triggers alarm on threat detection.The 
+outcome is based on the quality of the camera.
 
 ## Features
 - 👤 Face Recognition (Known vs Unknown/Intruder)
