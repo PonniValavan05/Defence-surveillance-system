@@ -13,7 +13,7 @@ Sends automatic email alerts and triggers alarm on threat detection.
 - 🔔 Alarm Sound on Threat Detection
 - 🌐 Web Dashboard with Login/Signup
 
-## Technologies Used
+## Technologies 
 - Python
 - Flask
 - YOLOv8
