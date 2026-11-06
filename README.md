@@ -11,7 +11,7 @@ Sends automatic email alerts and triggers alarm on threat detection.
 - 🔥 Fire Detection
 - 📧 Automatic Email Alerts
 - 🔔 Alarm Sound on Threat Detection
-- 🌐 Web Dashboard with Login/Signup
+- 🌐 Web Dashboard with Login/
 
 ## Technologies Used
 - Python
