@@ -15,7 +15,7 @@ Sends automatic email alerts and triggers alarm on threat detection.
 
 ## Technologies Used
 - Python
-- 
+- Flask
 - YOLOv8
 - OpenCV
 - face_recognition
