@@ -7,7 +7,7 @@ Sends automatic email alerts and triggers alarm on threat detection.
 
 ## Features
 - 👤 Face Recognition (Known vs Unknown/Intruder)
-- 🔫 Weapon Detection (Gun, Knife, Pistol, Rifle)
+- 🔫 Weapon Detection (Gun, Knife, Pistol, )
 - 🔥 Fire Detection
 - 📧 Automatic Email Alerts
 - 🔔 Alarm Sound on Threat Detection
