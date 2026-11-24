@@ -1,4 +1,4 @@
-import cv2
+import 
 import face_recognition
 import os
 import torch
