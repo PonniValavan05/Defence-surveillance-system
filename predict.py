@@ -3,7 +3,7 @@ import face_recognition
 import os
 import torch
 from ultralytics import YOLO
-from playsound import playsound
+from playsound import 
 import yagmail
 import time
 
