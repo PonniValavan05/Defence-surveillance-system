@@ -1,6 +1,6 @@
 import cv2
 import os
-import torch
+import 
 import time
 import face_recognition
 from ultralytics import YOLO
