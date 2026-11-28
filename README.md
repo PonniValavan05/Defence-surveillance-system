@@ -6,7 +6,7 @@ Sends automatic email alerts and triggers alarm on threat detection.
 
 
 ## Features
-- 👤  Recognition (Known vs Unknown/Intruder)
+- 👤 Face Recognition (Known vs Unknown/Intruder)
 - 🔫 Weapon Detection (Gun, Knife, Pistol, Rifle)
 - 🔥 Fire Detection
 - 📧 Automatic Email Alerts
